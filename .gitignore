@@ -6,3 +6,11 @@ hs_err_pid*
 .bloop
 .metals
 target/
+
+# Exclude all files in the data/processed directory except .gitkeep
+/data/processed/*
+!/data/processed/.gitkeep
+
+# Exclude all files in the data/raw directory except .gitkeep
+/data/raw/*
+!/data/raw/.gitkeep

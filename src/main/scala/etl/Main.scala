@@ -6,9 +6,10 @@ import etl.process.DataProcessor
 import etl.load.DataLoader
 
 object Main extends App {
-  val (inputUrl, outputPath) = SparkUtils.parseArgs(args)
-  val tempFilePath = "./data/raw/data.gz"
-  val tempCsvFilePath = "./data/raw/data.json"
+  val inputUrl: String = "https://smn.conagua.gob.mx/tools/GUI/webservices/?method=1"
+  val tempFilePath : String = "./data/raw/data.gz"
+  val tempCsvFilePath: String = "./data/raw/data.json"
+  val outputPath: String = "./data/processed/data.parquet"
 
   // Request data from endpoint
   val data = HttpRequester.get(inputUrl)
