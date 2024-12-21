@@ -9,7 +9,7 @@ object Main extends App {
   val inputUrl: String = "https://smn.conagua.gob.mx/tools/GUI/webservices/?method=1"
   val tempFilePath : String = "./data/raw/data.gz"
   val tempCsvFilePath: String = "./data/raw/data.json"
-  val outputPath: String = "./data/processed"
+  val outputPath: String = "./data/processed/data.parquet"
 
   // Request data from endpoint
   val data = HttpRequester.get(inputUrl)
