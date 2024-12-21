@@ -6,3 +6,6 @@ hs_err_pid*
 .bloop
 .metals
 target/
+!/data/processed/.gitkeep
+!/data/raw/.gitkeep
+/data/
