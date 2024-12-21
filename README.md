@@ -22,3 +22,6 @@ To health check
 If everything went good then run
 
 `sbt "runMain etl.Main"`
+
+## Run tests
+`sbt test`
