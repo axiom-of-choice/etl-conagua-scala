@@ -10,6 +10,18 @@ This repository is a small project consisting of an ETL pipeline using Spark Sca
 ## How to use it?
 
 It is pretty simple, you just need to check if sbt and scala is appropiately installed
+
+To install dependencies:
+
+`sbt compile` 
+
+To health check
+
 `sbt "runMain etl.hello.Hello"`
-IF everything went good then use
+
+If everything went good then run
+
 `sbt "runMain etl.Main"`
+
+## Run tests
+`sbt test`
