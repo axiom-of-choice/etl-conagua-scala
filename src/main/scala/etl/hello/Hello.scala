@@ -1,6 +1,6 @@
 package etl.hello
 
 
-object Hello extends App {
+object Hello {
     println("Hello World, everything is running")
 }

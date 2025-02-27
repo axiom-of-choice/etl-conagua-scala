@@ -7,7 +7,7 @@ This repository is a small project consisting of an ETL pipeline using Spark Sca
 2. Converts the GZIP into a json file
 3. Reads the data with Spark and write it into a parquet
 
-## How to use it?
+## How to use it locally?
 
 It is pretty simple, you just need to check if sbt and scala is appropiately installed
 
@@ -19,9 +19,15 @@ To health check
 
 `sbt "runMain etl.hello.Hello"`
 
-If everything went good then run
+If everything went good then run to run the app locally in your machine.
 
 `sbt "runMain etl.Main"`
 
 ## Run tests
 `sbt test`
+
+## How to use it in a container?
+
+Run `docker build -t etl-conagua-scala .` to build the docker image.
+
+Run `docker run -it --rm etl-conagua-scala` after building the image, you'll see the results in the shell.
