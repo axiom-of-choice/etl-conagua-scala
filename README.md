@@ -15,10 +15,6 @@ To install dependencies:
 
 `sbt compile` 
 
-To health check
-
-`sbt "runMain etl.hello.Hello"`
-
 If everything went good then run to run the app locally in your machine.
 
 `sbt "runMain etl.Main"`
