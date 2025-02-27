@@ -31,3 +31,11 @@ If everything went good then run to run the app locally in your machine.
 Run `docker build -t etl-conagua-scala .` to build the docker image.
 
 Run `docker run -it --rm etl-conagua-scala` after building the image, you'll see the results in the shell.
+
+## How to use it in a Spark cluster?
+
+Run `sbt assemlbly` to build the jar. This will run the tests as well before building the Jar.
+
+Change the permissions of the shell script `chmode 777 spark-submit-script.sh`
+
+Run `./spark-submit.sh`
