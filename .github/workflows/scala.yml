@@ -23,11 +23,11 @@ jobs:
         cache: 'sbt'
     - name: Install sbt
       run: |
+        echo "Installing sbt..."
         curl -L -o sbt.zip https://github.com/sbt/sbt/releases/download/v1.5.5/sbt-1.5.5.zip
         unzip sbt.zip
-        sudo mv sbt /usr/local/bin/
-        sudo ln -s /usr/local/bin/sbt/bin/sbt /usr/local/bin/sbt
+        sudo mv sbt /usr/local/sbt
+        sudo ln -s /usr/local/sbt/bin/sbt /usr/local/bin/sbt
+        sudo ln -s /usr/local/sbt/bin/sbtn /usr/local/bin/sbtn
     - name: Run tests
       run: sbt test
-    - name: Upload dependency graph
-      uses: scalacenter/sbt-dependency-submission@ab086b50c947c9774b70f39fc7f6e20ca2706c91
